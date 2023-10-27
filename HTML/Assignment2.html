@@ -1,0 +1,247 @@
+<!-- <html>
+<center>
+<form>
+<label>FirstName</label><input type="text" name="firstName" placeholder="Enter first name"/><br><br><br>
+
+<lable>Lastname</lable><input type="text" name="LastName" placeholder="Enter last name"/><br><br><br>
+
+<lable>Address</lable><input type="text" name="address" placeholder="Address"/><br><br><br>
+
+<lable>MobileNumber</lable><input type="text" name="Number" placeholder="MobileNUmber"/><br><br><br>
+
+<lable>Email</lable><input type="text" name="Email" placeholder="Enter Email"/><br><br><br>
+<input type="button" name="submit" value="save" onclick="saveData()"/><br>
+
+<input type="button" name="Get" value="get" onclick="getData()"/><br>
+</form>
+<table align="center" border="5px" style="border: 5px;">
+   <caption align="center">GetData</caption>
+   <tr><td align="center">FirstName</td><td align="center">LastName</td><td align="center">Address</td><td align="center">MobileNumber</td><td align="center">Email</td></tr>
+   <tr><td></td></tr>
+   
+</table>
+</center>
+<script>
+    function saveData(){
+        var a=document.forms[0].firstName.value;
+        var b=document.forms[0].LastName.value;
+        var c=document.forms[0].address.value;
+        var d=document.forms[0].Number.value;
+        var e=document.forms[0].Email.value;
+        console.log(a+"\t\t"+b+"\t\t"+c+"\t\t"+d+"\t\t"+e);
+        sessionStorage.firstName=a;
+        sessionStorage.LastName=b;
+        sessionStorage.address=c;
+        sessionStorage.Number=d;
+        sessionStorage.Email=e;
+        
+    }
+   
+    function getData(){
+        document.forms[0].getData();
+    }
+</script>
+</html> -->
+<!-- <table>
+    <form>
+        <tr>
+            <td>
+                <label for="FirstName">
+                    Name
+                </label>
+            </td>
+            <td><input type="text" id="firstName" />
+            </td>
+        </tr>
+        <tr>
+            <td><label for="LastName">
+                    FirstName
+                </label>
+            </td>
+            <td><input type="text" id="lastName" />
+            </td>
+        </tr>
+        <tr>
+            <td><label for="Address">
+                   Address
+                </label>
+            </td>
+            <td><input type="text" id="address" />
+            </td>
+        </tr>
+        <tr>
+            <td><label for="telnum">
+                    Tel No.
+                </label>
+            </td>
+            <td><input type="text" id="Number" />
+            </td>
+        </tr>
+        <tr>
+            <td><label for="Email">
+                    Email
+                </label>
+            </td>
+            <td><input type="text" id="Email" />
+            </td>
+        </tr>
+    </form>
+</table>
+<input type="button" name="submit" value="save" onclick="saveData()"/><br>
+<input type="button" name="Get" value="get" onclick="getData()"/><br>
+<script>
+    function saveData(){
+        var a=document.forms[0].firstName.value;
+        var b=document.forms[0].LastName.value;
+        var c=document.forms[0].address.value;
+        var d=document.forms[0].Number.value;
+        var e=document.forms[0].Email.value;
+        console.log(a+"\t\t"+b+"\t\t"+c+"\t\t"+d+"\t\t"+e);
+        sessionStorage.firstName=a;
+        sessionStorage.LastName=b;
+        sessionStorage.address=c;
+        sessionStorage.Number=d;
+        sessionStorage.Email=e;
+        
+    }
+   
+    function getData(){
+        document.forms[0].getData();
+    }
+</script> -->
+<!DOCTYPE html>
+<html>
+<center><b>User Information</b></center>
+
+<center>    
+  <img src="https://media.tenor.com/aBpzK-5x8cQAAAAC/smiling-dhanush.gif" width="100%" height="100%"/>
+</center>
+<head class="font">
+    <title>Form and Table Example</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .font{
+            color:rgb(46, 253, 5)
+        }
+    </style>
+</head>
+<body  bgcolor="black" class="font">
+    <h1>Enter Your Information</h1>
+    <form id="dataForm">
+    <center>
+        <fieldset style="width:50px;height: 50px;">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        </fieldset><br><br>
+
+        <fieldset style="width:50px;height: 50px;">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        </fieldset><br><br>
+        
+        <fieldset style="width:50px;height: 50px;">
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+        </fieldset><br><br>
+
+        <fieldset style="width:50px;height: 50px;">
+        <label for="mobileNumber">Mobile Number:</label>
+        <input type="tel" id="mobileNumber" name="mobileNumber" required>
+        </fieldset><br><br>
+        <fieldset style="width:50px;height: 50px;">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        </fieldset><br><br>
+        <fieldset style="width:100px;height: 100px;">
+           <legend>Select Gender</legend>
+
+                <input type="radio" name="Gender" value="M"/>Male&nbsp;&nbsp;<input type="radio" name="Gender" value="F"/>Female<br>
+     
+          
+        </fieldset><br><br>
+    
+          
+        <fieldset style="width:100px;height: 100px;">
+          <legend>Hobbies</legend>
+    
+            <input type="checkbox" name="Hobbies" value="Cricket">Cricket<br>
+    
+            <input type="checkbox" name="Hobbies" value="Football">Football<br>
+    
+            <input type="checkbox" name="Hobbies" value="Music">Music<br>
+    
+         
+        </fieldset>
+    </center>
+    </form>
+
+ 
+
+    <button onclick="addData()">Add Data</button>
+    <button onclick="createTable()">Create Table</button>
+
+ 
+
+    <h2>Entered Data</h2>
+    <table id="dataTable">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Address</th>
+            <th>Mobile Number</th>
+            <th>Email</th>
+        </tr>
+    </table>
+
+ 
+
+    <script>
+        var data = [];
+
+ 
+
+        function addData() {
+            var formData = {
+                firstName: document.getElementById("firstName").value,
+                lastName: document.getElementById("lastName").value,
+                address: document.getElementById("address").value,
+                mobileNumber: document.getElementById("mobileNumber").value,
+                email: document.getElementById("email").value,
+            };
+            data.push(formData);
+            document.getElementById("dataForm").reset();
+        }
+
+ 
+
+        function createTable() {
+            var table = document.getElementById("dataTable");
+            table.innerHTML = '<tr><th>First Name</th><th>Last Name</th><th>Address</th><th>Mobile Number</th><th>Email</th></tr>';
+            for (var i = 0; i < data.length; i++) {
+                var row = table.insertRow(-1);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                var cell3 = row.insertCell(2);
+                var cell4 = row.insertCell(3);
+                var cell5 = row.insertCell(4);
+                cell1.innerHTML = data[i].firstName;
+                cell2.innerHTML = data[i].lastName;
+                cell3.innerHTML = data[i].address;
+                cell4.innerHTML = data[i].mobileNumber;
+                cell5.innerHTML = data[i].email;
+            }
+        }
+    </script>
+</body>
+</html>

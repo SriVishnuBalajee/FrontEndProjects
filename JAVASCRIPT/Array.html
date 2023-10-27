@@ -1,0 +1,32 @@
+<html>
+    <script>
+        var arr=["Gavstech",100,299.09,true,"chennai",200];
+        for (i in arr){
+            document.writeln(arr[i]+"@"+i);
+        }
+       for(i of arr){
+        document.writeln(i+"<br>")
+       }
+       document.writeln("<b>Length :</b>"+arr.length+"<br>");
+       document.writeln("<b>Reverse :</b>"+arr.reverse()+"<br>");
+       document.writeln("<b>Sort :</b>"+arr.sort()+"<br>");
+       var v=arr.indexOf(200);
+       if (v==-1){
+        document.writeln("<b>Element Not Found</b> <br>");
+       }
+       else{
+        document.writeln("<b>Index Of the Element is :</b>"+v+"<br>");
+       }
+
+       document.writeln(arr.join("..."));
+  
+       arr.push("800");
+       document.writeln(arr+"<br>");
+       arr.pop("800");
+       arr.pop(true);
+       arr
+       document.writeln(arr+"<br>");
+    </script>
+    <body> 
+    </body>
+</html>

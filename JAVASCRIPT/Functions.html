@@ -1,0 +1,23 @@
+<html>
+    <script>
+        function test(num1,num2){ //function definition
+            document.writeln(Math.sqrt(num1)+"<br>");
+            document.writeln(Math.sqrt(num2)+"<br>");
+        }
+        test(25,36);//function call
+        var validate=function (age)
+        {
+            if (age>=18) {
+                document.writeln("Eligible<br>")
+                
+            } 
+            else {
+                document.writeln("Not Eligible")
+            }
+        }
+        validate(22);
+        var calc=new Function("num1,num2","{document.writeln(num1 * num2) ;document.writeln(num1+num2)}");
+        calc(5,5);
+    </script>
+    
+</html>

@@ -1,0 +1,39 @@
+<html>
+    <script>
+        var dict=[];
+        dict["India"]="New Delhi";
+        dict["USA"]="Washington DC";
+        dict["UK"]="London";
+        dict["Japan"]="Tokyo";
+        document.writeln(dict["India"]);
+        document.writeln("<br>");
+        document.writeln(dict["USA"]);
+        document.writeln("<br>");
+        document.writeln(dict["UK"]);
+        document.writeln("<br>");
+        document.writeln(dict["Japan"]);
+        document.writeln("<br>");
+        document.writeln("<hr>");
+        var obj=new Object();//Object obj for Object class
+        obj.empid=100;
+        obj.empname="Srivishnu";
+        obj.empage=22;
+        document.writeln("Employee ID: "+obj.empid+" <br>"+"Employee Name: "+obj.empname+" <br>"+"Employee Age: "+obj.empage);
+        document.writeln("<br>"+obj["empid"]+"&nbsp;&nbsp; "+obj["empname"]+"&nbsp;&nbsp; "+obj["empage"]);//Associative array notation
+        document.writeln("<hr>");
+        obj.getempname=function(){
+            return this.empname;
+        }
+        obj.getempid=function(){
+            return this.empid;
+        }
+        document.writeln("Employee Name: "+obj.getempname()+" <br>"+"Employee ID: "+obj.getempid()+"<br>");
+        obj.setempname=function(name){
+             this.empname="My name is "+name;
+        }
+        obj.setempid=function(id){  
+        }
+        obj.setempname("Mathan")
+        document.writeln(obj.getempname());        
+    </script>
+</html>

@@ -1,0 +1,18 @@
+input[type="text"]{
+    color:red;
+    direction: rtl;
+    text-align: center;
+}
+input[type="email"]{
+    color:red;
+    direction: rtl;
+    text-align: center;
+}
+input[type="number"]{
+    color:red;
+    direction: rtl;
+    text-align: center;
+}
+input[type="submit"]{
+    cursor:grab;
+}

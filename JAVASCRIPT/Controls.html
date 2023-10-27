@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<body >
+    <b>Control example</b><br>
+    <script type="text/javascript">
+        var cnt=0;
+        while(cnt < 10){
+            cnt++;
+            document.writeln("<br>"+cnt+"</br>");
+        }
+        for(cnt=0;cnt<10;cnt++){
+            document.writeln("<br>FOR LOOP")
+        }
+        if (cnt==10) {
+            document.writeln("<br>CNT=10")
+        } else {
+            document.writeln("<br>CNT!=10</br>")            
+        }   
+        var day;
+        switch (new Date().getDay() ) {
+             case 0:
+               day = "Sunday";
+               break;
+             case 1:
+               day = "Monday";
+               break;
+             case 2:
+                day = "Tuesday";
+               break;
+             case 3:
+               day = "Wednesday";
+               break;
+             case 4:
+               day = "Thursday";
+               break;
+             case 5:
+               day = "Friday";
+               break;
+             case 6:
+               day = "Saturday";
+            default:
+                document.writeln("Months");
+        }
+         document.writeln("<br>Today's Day : "+day +"<br>");
+        Cities=["Chennai","Bangalore","Hyderabad","Mumbai","Ranchi","Patna","Pune"];
+        document.writeln(Cities.length);"<br>"
+        document.writeln(Cities);"<br>"
+        for(i in Cities){
+            document.writeln(Cities[i]+"<br>")
+        }
+        Cities[9]="Chandigarh"
+        Cities[11]="NewDelhi"
+        Cities[13]=300;
+        Cities[16]=14.005;
+        for(i of Cities){
+            document.writeln(i+"<br>")
+        }
+        document.writeln("Cities"+Cities+"<br>");
+        Cities.reverse();
+        document.writeln("Cities"+Cities+"<br>");
+        Cities.sort();
+        document.writeln("Cities"+Cities+"<br>");
+    </script><br><br>
+    <b>ALL CONTROLS</b>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<center>
+<b>User Information</b><br><br><br>
+<form action="#">
+    <label>Employee Id</label><input type="text" name="employeeID"
+        value="100" readonly/><br><br><br>
+    <label for="fname">First name</label><input type="text"
+     name='firstName' placeholder="Enter your Name" required
+     maxlength="30" minlength="5" /> <br><br><br>
+     <label>Age</label><input type="number" name="empAge" min="18" max="100" size="1"  /></br><br><br>
+     <lable>Brightness</lable><input type="range"  min="10" max="10000" style="width: 900;" oninput="updateBrightness()"name="brightness"/><br><br><br>
+    <input type="text"  name="brightness1" style="width:60px;height:15px" readonly/><br><br><br>
+    <label>DateOfJoining</label><input type="datetime-local" name="joiningDate" min="1993-09-26 12:00" max="2023-09-26 13:00"/><br><br><br>  
+    <label>UploadYourResume</label><input type="file" name="Resume" accept="audio/mp3,video/mp4,application/pdf" /><br><br><br>
+    <label>YourMailID</label><input type="email" name="emailID" minlenght="6"/><br><br><br>
+    <label>Image</label><input type="image" src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/57.png" name="img" style="width:50px;height:50px;"/><br><br><br>
+    
+    <input type="submit" value="save"/>&nbsp;&nbsp;<input type="reset" value="reset"/>
+</form>
+<script>
+    function updateBrightness(){
+        document.forms[0].brightness1.value=document.forms[0].brightness.value ;
+
+    }
+</script>  
+</center>  
+     
+
+
+

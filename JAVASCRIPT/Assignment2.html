@@ -1,0 +1,48 @@
+<html>
+    
+    <body>
+       
+           
+        <form>
+        <input type="checkbox" value="Click">Male<br>
+        <input type="checkbox" value="Click">Female<br>
+        <input type="button" value="Remove" onclick="Remove()">
+        <input type="button" value="Replace" onclick="Replace()">
+        <input type="button" value="Add" onclick="Add()">  
+        </form>
+      
+        
+    </body>
+    <script>
+        function Add(){
+        var v=window.prompt("Enter Type");
+        var v1=document.createElement("input");
+        v1.type=v;
+        v1.value=" ";
+        document.body.appendChild(v1);
+         }
+        function Remove(){ 
+        var ele=document.body.lastChild;
+        var i=window.confirm("Are you sure?");
+        if(i){
+        document.body.removeChild(ele);
+         }
+         else{
+         return alert("Not Removed");
+         }
+        }
+        function Replace(){ 
+        var ele=document.body.lastChild;
+        var cmd=prompt(" enter to alter textz,radio,email,checkbox");
+        
+         var i=window.confirm("Are you sure?");
+        if(i){
+          ele.type=cmd;
+         }
+         else{
+         return alert("Not Replaced");
+         }
+        }
+        </script>
+    </body>
+</html> 

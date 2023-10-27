@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>This is the Header</HEAD>
+<TITLE>Cascading Style Sheets</TITLE>
+<BODY>
+<FORM NAME="MyForm">
+	<B>First Name <INPUT TYPE = "TEXT" name="FIRST_NAME" VALUE="Exi"/></B>
+	<B>Last Name <INPUT TYPE = "TEXT" NAME="LAST_NAME" VALUE="Consulting"/></B>
+	<INPUT TYPE="submit" value="submit"/>
+
+	<P>This is a new Paragraph>
+	<p.class="center">
+		This is a centered paragraph</p>
+	<p.class="left">
+		This is a left aligned paragraph</p>
+	<p.class="center left">
+		This is a center+left aligned paragraph</p>
+	<B CLASS="Indigo">
+		<BR>This is in Bold</B>
+	<B><I><U>This is in bold italic and underline</U></I></B>
+</FORM>
+</BODY>
+</HTML>

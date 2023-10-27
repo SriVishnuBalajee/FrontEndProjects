@@ -1,0 +1,49 @@
+/*Defines the styles for submit buttons.*/
+/*<Style>..</style> should not be used */
+
+input[type="submit"]
+{
+	text-align:justified;
+	color:Brown;
+	font-family:"Tahoma";
+}
+
+/*Defines the styles for text items.*/
+input[type="text"]
+{
+	text-align:center;
+	color:pink;
+	font-family:verdana;
+}
+
+p.center
+{
+	text-align:center;
+	color:pink;
+	font-family:verdana;
+}
+p.left
+{
+	text-align:left;
+	font-family:"Arial Black";
+	font-size:28
+ }
+
+/*class definition */
+.Indigo {font-family:Tahoma;color:indigo}
+
+B {
+	text-align:left;
+	color:magenta;
+	font-family:"times new roman";
+	font-size:26
+}
+.Indigo {font-family:Helvetica;color:gray}
+
+I,U
+{
+	text-align:center;
+	color:violet;
+	font-family:"arial black";
+	font-size:20;
+}

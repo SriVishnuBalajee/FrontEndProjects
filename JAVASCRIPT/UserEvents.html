@@ -1,0 +1,51 @@
+<html>
+    <center>
+    <input type="number" min="1" max="100" id="number"/>
+    <input type="button" value="StartCounting" onclick="StartCounting()"/>
+    <input type="button" value="StopCounting" onclick="StopCounting()"/>
+    <input type="button" value="ReverseCounting"  onclick="reversecount()"/>
+    </center>
+    <script>
+       
+            var event=new Event('startCounting');
+            document.addEventListener('startCounting',countAndshow);
+            function countAndshow(){
+                var i= document.getElementById('number').value;//50
+                sessionStorage.setItem('count',i);
+                var start=1;
+                countInterval=setInterval(function(){
+                    if(start <= i)
+                    {
+                    document.getElementById('number').value=start++; 
+                    }
+                },10);
+            } 
+            var event3=new Event("reversecount");
+            document.addEventListener('reversecount',reverseCount);
+            function reverseCount(){
+                var i=sessionStorage.getItem('count');
+                countInterval1=setInterval(function(){
+                    if(i >= 0){
+                    document.getElementById("number").value=i--;
+                }
+                },10); 
+            }
+            var event2=new Event('StopCounting');
+            document.addEventListener('StopCounting',stopCounting);
+            function stopCounting(){
+                    clearInterval(countInterval);
+                    clearInterval(countInterval1);
+            }
+            
+            function StartCounting(){
+                document.dispatchEvent(event);
+            }
+            function reversecount(){
+                document.dispatchEvent(event3);
+            }
+            function StopCounting(){
+                document.dispatchEvent(event2);   
+            }
+            document.addEventListener('stopCounting',StopCounting);
+    </script>
+</html>

@@ -1,0 +1,121 @@
+<center>
+<u style="color:blue; font-size: larger; font-weight: bolder; background-color:yellow;">User Information</u><input type="image" src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/57.png" name="img" style="width:50px;height:50px;"/><br><br>
+<style>
+    .font{
+        color: blue;
+    }
+</style>
+<fieldset style="border: 10px; border-style:groove; width:fit-content; background-color: yellow; border-radius: 10%; border-color: blue;">
+<form  action="#" class="font"> 
+    <label>Employee ID</label><input type="text" name="employeeID" onblur="Checkid()" onblur="CheckFirstName()"/><label id="id"></label><br><br>
+    <label for="fname">First name</label><input type="text" name='firstName' placeholder="Enter your Name" required maxlength="30" minlength="5" /> <br><br>
+    <label>Age</label><input type="number" name="empAge" onblur="CheckAge()" min="18" max="100" size="1"  /></br><br>
+    <lable>Brightness</lable><input type="range"  min="10" max="1000" style="width: 200;" oninput="updateBrightness()"name="brightness"/>
+    <input type="text"  name="brightness1" style="width:40px;height:20px" readonly/><br><br>
+    <label>DateOfJoining</label><input type="datetime-local" name="joiningDate" min="1993-09-26 12:00" max="2023-09-26 13:00"/><br><br>
+    <label>UploadYourResume</label><input type="file" name="Resume" accept="audio/mp3,video/mp4,application/pdf" /><br><br>
+    <label>YourMailID</label><input type="email" name="emailID" minlenght="6"/><br><br>
+    <input id="save" type="submit" value="Save" disabled />
+    <input type="button" value="Reset" onreset="return confirmreset()"/><br><br>
+    <input id="check" type="checkbox" value="SaveStatus"  onclick="onclickcheck()"/>Agree to Terms and Conditions<br>
+   </form>
+</fieldset> 
+    <script>
+    function updateBrightness(){
+        document.forms[0].brightness1.value=document.forms[0].brightness.value ;
+    }
+    function CheckFirstName(){
+           var fname=document.forms[0].firstName.value;
+               if(fname == ""){
+               alert("Please enter your first name");
+             
+                  }}
+    function CheckAge(){
+                 var empAge=document.forms[0].empAge.value;                                        
+                 if(empAge == ""){
+                      window.alert("Age is mandotory")
+                 }
+                 }
+
+                 
+    function CheckType(){
+                 var nerror=document.getElementById("namerror");
+                 nerror.innerHTML="";    
+                 } 
+    function Checkid(){
+        if(document.forms[0].employeeID.value == ""){
+            document.getElementById("id").innerHTML="Employee ID is mandotory";
+            document.getElementById("id").style.color="red";
+        }
+        else{
+            document.getElementById("id").innerHTML="";
+        }
+    }
+    function confirmreset(){
+        
+        var v=window.confirm("Are you sure you want to reset?");
+        return v;
+    }
+    function onclickcheck(){
+        if(document.getElementById("check").checked){
+            document.getElementById("save").disabled=false;
+        }
+        else{
+            document.getElementById("save").disabled=true;
+        }
+    }
+
+</script> 
+                 
+                                                                
+                                                                                                                     
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                                                   
+                                                                 
+                                                                             
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                

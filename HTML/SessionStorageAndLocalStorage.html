@@ -1,0 +1,75 @@
+<html>
+
+    <center>
+
+    <form action="#" method="#">
+
+        <label>Employee ID</label>
+
+        <input type="text" name="employeeID" />
+
+        <br>
+
+       <br>
+
+        <label for="fname">First name</label> <input type="text"
+
+        name="firstName" placeholder="Enter your name"
+
+        required max="30"
+
+        minlength="3"/>
+
+        <br>
+
+        <br>
+
+        <label>Age</label><input type="number" min="18" max="60" name="empAge" size="5" /><br><br>
+
+        <input type="button" value="Save" onclick="saveData()" />&nbsp;&nbsp;<input type="button" value="reset" onclick="removeData()"/>&nbsp;&nbump;<input type="button" value="modify" onclick="modifyData()"/>
+         
+    </form>
+
+    <!-- <script>
+
+        function updateVolume(){
+
+           document.forms[0].volLevel.value=document.forms[0].fvolume.value+"%";
+
+        }
+
+    </script> -->
+
+</center>
+
+
+<script>
+    function saveData(){
+        var a=document.forms[0].employeeID.value;
+        var b=document.forms[0].firstName.value;
+        var c=document.forms[0].empAge.value;
+        console.log(a+"\t\t"+b+"\t\t"+c);
+        sessionStorage.employeeID=a;
+        sessionStorage.firstName=b;
+        sessionStorage.empAge=c;
+        localStorage.employeeID=a;
+        localStorage.firstName=b;
+        localStorage.empAge=c;
+    }
+    function modifyData(){
+        var a=document.forms[0].employeeID.value;
+        var b=document.forms[0].firstName.value;
+        var c=document.forms[0].empAge.value;
+        localStorage.setItem("employeeID",a);
+        localStorage.setItem("firstName",b);
+        localStorage.setItem("empAge",c);
+    }
+    function removeData(){
+   
+        localStorage.removeItem("employeeID");
+        localStorage.removeItem("firstName");
+        localStorage.removeItem("empAge");
+    }
+</script>
+
+</html>

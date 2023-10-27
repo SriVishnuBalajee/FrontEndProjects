@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<style>
+
+ 
+
+ 
+
+input[type="text"]{
+
+ 
+
+    color: rgb(247, 81, 222);
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+.columnText{
+
+ 
+
+    color: orange;
+
+ 
+
+}
+
+ 
+
+table{
+
+ 
+
+    border:1px solid black;
+
+ 
+
+    border-collapse:collapse;
+
+ 
+
+}
+
+ 
+
+ th,td{
+
+ 
+
+    border:1px solid black;
+
+ 
+
+ 
+
+ 
+
+    border-style:solid;
+
+ 
+
+}
+
+ 
+
+#text1{
+
+ 
+
+    transform:rotate(-90deg);
+
+ 
+
+}
+
+ 
+
+.sales1{
+
+ 
+
+    color:orange;
+
+ 
+
+    text-align:center;
+
+ 
+
+    font-size:18px;
+
+ 
+
+}
+
+ 
+
+.products{
+
+ 
+
+    color:blue;
+
+ 
+
+    }
+
+ 
+
+   
+
+ 
+
+    .month{
+
+ 
+
+    color:violet;
+
+ 
+
+    }
+
+ 
+
+    #months{
+
+ 
+
+    color:maroon;
+
+ 
+
+    font:15px;
+
+ 
+
+   
+
+ 
+
+    }
+
+ 
+
+    #box{
+
+ 
+
+    border:2px inset silver;
+
+ 
+
+    margin:5px;
+
+ 
+
+    color:violet;
+
+ 
+
+    width:60px
+
+ 
+
+    }
+
+ 
+
+    .button{
+
+ 
+
+    width:130px;
+
+ 
+
+    height:80px;
+
+ 
+
+    }
+
+ 
+
+    .bookmark{
+
+ 
+
+    position:content-box;
+
+ 
+
+    width:20px;
+
+ 
+
+    height:25px;
+
+ 
+
+    }
+
+ 
+
+    #boxdashed{
+
+ 
+
+    border:2px dashed black;
+
+ 
+
+    margin:5px;
+
+ 
+
+    color:violet;
+
+ 
+
+    width:60px
+
+ 
+
+    }
+
+ 
+
+    #boxblue{
+
+ 
+
+    border:2px solid blue;
+
+ 
+
+    margin:5px;
+
+ 
+
+    color:violet;
+
+ 
+
+    width:60px
+
+ 
+
+    }
+
+ 
+
+    #boxblack{
+
+ 
+
+    border:2px solid black;
+
+ 
+
+    margin:5px;
+
+ 
+
+    color:violet;
+
+ 
+
+    width:60px
+
+ 
+
+    }
+
+ 
+
+    #boxred{
+
+ 
+
+    border:2px solid red;
+
+ 
+
+    margin:5px;
+
+ 
+
+    color:violet;
+
+ 
+
+    width:60px
+
+ 
+
+    }
+
+</style>
+
+<title>HTML Assignment</title>
+
+</head>
+
+<body>
+
+    <center>
+
+ 
+
+ 
+
+ 
+
+        <table style="width:450px;height:400px">
+
+       
+
+         
+
+       
+
+        <tr>
+
+       
+
+         
+
+       
+
+        <td id="text1" rowspan="2" align="center" style="border:none">All sales in South East Asia only</td>
+
+       
+
+         
+
+       
+
+        <td colspan="7" align="center"><img src="c:\Users\srivishnu.balaji\Desktop\mathankumaru.jpg" alt="diwali pic" title="diwali" style="width:270px;height:160px"/></td>
+
+       
+
+         
+
+       
+
+        </tr>
+
+       
+
+         
+
+       
+
+        <tr>
+
+       
+
+         
+
+       
+
+        <td colspan="7" class="sales1"><b><i>Sales for the year ended December 31, 2007<br>(Sales in pieces)</i></b></td>
+
+       
+
+         
+
+       
+
+        </tr>
+
+       
+
+         
+
+       
+
+        <tr>
+
+       
+
+         
+
+       
+
+        <th rowspan="6" class="products">All products in warehouse</th>
+
+       
+
+         
+
+       
+
+        <th rowspan="2" width="50px" class="products"  align="left"><mark style="background-color: yellow;color: blue;">Products</mark></th>
+
+       
+
+         
+
+       
+
+        <th colspan="6" align="center" class="month">Months</th>
+
+       
+
+         
+
+       
+
+        </tr>
+
+       
+
+         
+
+       
+
+        <tr id="months">
+
+       
+
+         
+
+       
+
+        <td ><mark><b><i>January</i></b></mark></td>
+
+       
+
+         
+
+       
+
+        <td><mark><b><i>February</i></b></mark></td>
+
+       
+
+         
+
+       
+
+        <td><mark><b> <i>March</i></b></mark></td>
+
+       
+
+         
+
+       
+
+        <td><mark><b><i>April</i></b></mark></td>
+
+       
+
+         
+
+       
+
+        <td><mark><b><i>May</i></b></mark></td>
+
+       
+
+         
+
+       
+
+        <td><mark><b><i>June</i></b></mark></td>
+
+       
+
+         
+
+       
+
+        </tr>
+
+       
+
+         
+
+       
+
+        <tr>
+
+       
+
+         
+
+       
+
+        <th id="products1" align="left"><mark>Logitech Mouse</mark></th>
+
+       
+
+         
+
+       
+
+        <td><p id="box">1500</p></td>
+
+       
+
+         
+
+       
+
+        <td><p id="boxblack">2113</p></td>
+
+       
+
+         
+
+       
+
+        <td><p id="box">2534</p></td>
+
+       
+
+         
+
+       
+
+        <td><p id="boxdashed">&nbsp;&nbsp;</p></td>
+
+       
+
+         
+
+       
+
+        <td><p id="box">1500</p></td>
+
+       
+
+         
+
+       
+
+        <td><p id="box">2113</p></td>
+
+       
+
+         
+
+       
+
+        </tr>
+
+       
+
+         
+
+       
+
+        <tr>
+
+       
+
+         
+
+       
+
+        <th id="products1" align="left"><mark>Microsoft Mouse</mark></th>
+
+       
+
+         
+
+       
+
+        <td><p id="box">1987</p></td>
+
+       
+
+         
+
+       
+
+        <td><p id="box">2182</p></td>
+
+       
+
+         
+
+       
+
+        <td><p id="box">1996</p></td>
+
+       
+
+         
+
+       
+
+        <td><p id="box">&nbsp;&nbsp;</p></td>
+
+       
+
+         
+
+       
+
+        <td><p id="box">1987</p></td>
+
+       
+
+         
+
+       
+
+        <td><p id="box">2182</p></td>
+
+       
+
+         
+
+       
+
+        </tr>
+
+       
+
+         
+
+       
+
+        <tr>
+
+       
+
+         
+
+       
+
+        <th id="products1" align="left"><mark>LG Mouse</mark></th>
+
+       
+
+         
+
+       
+
+        <td><p id="box">1345</p></td>
+
+       
+
+         
+
+       
+
+        <td><p id="boxblue">809</p></td>
+
+       
+
+         
+
+       
+
+        <td><p id="box">889</p></td>
+
+       
+
+         
+
+       
+
+        <td><p id="box">&nbsp;&nbsp;</p></td>
+
+       
+
+         
+
+       
+
+        <td><p id="boxdashed">1345</p></td>
+
+       
+
+         
+
+       
+
+        <td><p id="box">809</p></td>
+
+       
+
+         
+
+       
+
+        </tr>
+
+       
+
+         
+
+       
+
+        <tr>
+
+       
+
+         
+
+       
+
+        <th id="products1" align="left"><mark>Panasonic Mouse</mark></th>
+
+       
+
+         
+
+       
+
+        <td><p id="box">&nbsp;&nbsp;</p></td>
+
+       
+
+         
+
+       
+
+        <td><p id="box">&nbsp;&nbsp;</p></td>
+
+       
+
+         
+
+       
+
+        <td><p id="boxred">&nbsp;&nbsp;</p></td>
+
+       
+
+         
+
+       
+
+        <td><p id="box">809</p></td>
+
+       
+
+         
+
+       
+
+        <td><p id="box">&nbsp;&nbsp;</p></td>
+
+       
+
+         
+
+       
+
+        <td><p id="box">&nbsp;&nbsp;</p></td>
+
+       
+
+         
+
+       
+
+        </tr>
+
+       
+
+         
+
+       
+
+        </table>
+
+       
+
+         
+
+       
+
+         
+
+       
+
+        </center>
+
+       
+
+        <div >
+
+       
+
+            <p><img src="" alt="calculate" class="button" /></p>
+
+       
+
+           
+
+       
+
+            <div>
+
+       
+
+           
+
+       
+
+            BSE Listed Company <input type="checkbox"/>
+
+       
+
+           
+
+       
+
+            </div></div>
+
+       
+
+         
+
+       
+
+         
+
+       
+
+        </body>
+
+</body>
+
+</html>

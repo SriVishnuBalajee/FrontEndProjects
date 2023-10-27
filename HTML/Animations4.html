@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div
+{
+width:100px;
+height:100px;
+background:red;
+border:15px;
+border-style:groove;
+position:relative;
+animation-name:myfirst;
+animation-duration:1s;
+animation-timing-function:linear;
+animation-delay:1s;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+animation-play-state:running;
+/* Safari and Chrome: */
+-webkit-animation-name:myfirst;
+-webkit-animation-duration:4s;
+-webkit-animation-timing-function:linear;
+-webkit-animation-delay:4s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-direction:alternate;
+-webkit-animation-play-state:running;
+}
+div#id{
+   
+   width:100px;
+   height:100px;
+   background:red;
+   border:15px;
+   border-style:groove;
+   position:relative;
+   animation-name:myfirst;
+   animation-duration:1s;
+   animation-timing-function:linear;
+   animation-delay:1s;
+   animation-iteration-count:infinite;
+   animation-direction:alternate;
+   animation-play-state:running;
+  -webkit-animation-name:mySecond;
+  -webkit-animation-duration:4s;
+  -webkit-animation-timing-function:linear;
+  -webkit-animation-delay:4s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-direction:alternate;
+  -webkit-animation-play-state:running;
+  
+}
+@keyframes mySecond
+{ 
+0%   {background:red; left:200px; top:0px;}
+25%  {background:yellow; left:0px; top:0px; width: 300px;height: 300px;transform: rotate3d(70deg);}
+50%  {background:blue; left:0px; top:200px;}
+75%  {background:green; left:200px; top:200px; border-radius: 100%; }
+100% {background:red; left:200px; top:0px;} 
+}
+
+@keyframes myfirst
+{
+0%   {background:red; left:0px; top:0px;}
+25%  {background:yellow; left:200px; top:0px; width: 300px;height: 300px;transform: rotate3d(70deg);}
+50%  {background:blue; left:200px; top:200px;}
+75%  {background:green; left:0px; top:200px; border-radius: 100%; }
+100% {background:red; left:0px; top:0px;} 
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+0%   {background:red; left:0px; top:0px;}
+25%  {background:yellow; left:200px; top:0px;}
+50%  {background:blue; left:200px; top:200px;}
+75%  {background:green; left:0px; top:200px;}
+100% {background:red; left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+
+<div></div>
+<div id="id"></div>
+
+</body>
+</html>

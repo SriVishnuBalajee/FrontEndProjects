@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <style>
+
+    input[type="text"]{  
+
+    font-size: 12px;
+
+    color: #999;
+
+    padding: 6px;
+
+    -moz-box-shadow:inset 2px 2px 5px #888;
+
+    box-shadow:inset 2px 2px 5px #888;
+
+    border: 1px solid #b8b8b8;
+
+}
+
+h2
+
+{
+
+    color:red;
+
+}
+
+h3
+
+{
+
+    color:blue;
+
+}
+
+.xq
+
+{
+
+    color:blue;
+
+}
+
+label
+
+{
+
+    color:rgb(205, 17, 148);
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+    <h2><b>1. Tell Me About Yourself</b></h2>
+
+    <h3><b>Your Name</b></h3>
+
+    <label>First Name :</label><br><input type="text" placeholder="Enter FirstName"><br><br>
+
+    <label>Last Name :</label><br><input type="text" placeholder="Enter LastName"><br><br>
+
+    <label>Gender :</label><br><select name="Gender" id="Gender">
+
+            <option value="" disabled selected>-Select One-</option>
+
+            <option value="Male">Male</option>
+
+            <option value="Female">Female</option>
+
+        </select><br><br>
+
+    <h3><b>Birthday</b></h3>
+
+    <label>Month :</label><br><select name="Month" id="Month">
+
+        <option value="" disabled selected>-Select Month-</option>
+
+        <option value="January">1</option>
+
+        <option value="February">2</option>
+
+        <option value="March">3</option>
+
+        <option value="April">4</option>
+
+        <option value="May">5</option>
+
+        <option value="June">6</option>
+
+        <option value="july">7</option>
+
+        <option value="August">8</option>
+
+        <option value="September">9</option>
+
+        <option value="October">10</option>
+
+        <option value="November">11</option>
+
+        <option value="December">12</option>
+
+    </select><br>
+
+    <label>Day :</label><br><input type="text" placeholder="Enter Birth Day"><br>
+
+    <label>Year :</label><br><input type="text" placeholder="Enter Birth year"><br><br>
+
+    <label class="xq"><b>I Live In</b></label><br><select  name="Location" id="Location">
+
+        <option value="" disabled selected>Select the Location</option>
+
+        <option value=""></option>
+
+        <option value=""></option>
+
+    </select><br><br>
+
+    <label class="xq"><b>Postal Code</b></h3></label><br><input type="text" placeholder="Enter Postal Code"><br>
+
+    <h2><b>2. Select An Id and Password</b></h2>
+
+    <label class="xq"><b>Password</b></label><br><input type="password" placeholder="Enter Password" minlength="5"/><p style="color:black;">Capitalization matters. Use 6 to 32 characters, no spaces.</p><br>
+
+    <label class="xq"><b>Re-type Password</b></label><br><input type="password" placeholder="Enter Password" minlength="5"/>
+
+    <h2>3.In case you forget your ID or password</h2>
+
+    <label>Alternate Email:</label><br><input type="text" placeholder="Enter alternate Email"><br>
+
+    <label>Select security question:</label><br><select  name="Question" id="Question">
+
+        <option value="Question" disabled selected>Select the Security Question</option>
+
+        <option value="q1">What's the name of your childhood pet?</option>
+
+        <option value="q2">What's your childhood pet name?</option>
+
+    </select><br><br>
+
+    <label>Your Answer:</label><br><input type="text" placeholder="Enter Answer"><br><br>
+
+    <input type="button" value="Submit" name="Submit"/>
+
+    <input type="button" value="Reset" name="Reset"/>
+
+    <input type="button" value="Close" name="Close"/>
+
+</body>
+
+</html>

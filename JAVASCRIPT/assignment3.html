@@ -1,0 +1,61 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Eliminate Duplicates and Merge Arrays</title>
+
+</head>
+
+<body>
+
+    <script>
+
+        function eliminateDuplicates(arr) {
+
+            return Array.from(new Set(arr));
+
+        }
+
+        function mergeArraysWithoutDuplicates(arrayA, arrayB) {
+
+            const mergedArray = [...arrayA];
+
+            for (const item of arrayB) {
+
+                if (!mergedArray.includes(item)) {
+
+                    mergedArray.push(item);
+
+                }
+
+            }
+
+           return mergedArray;
+
+        }
+
+       const arrayA = [1, 2, 3, 2,1,4, 5];
+
+       const arrayB = [3, 4, 5, 5,3,5, 7];
+
+       const uniqueArrayA = eliminateDuplicates(arrayA);
+
+       const uniqueArrayB = eliminateDuplicates(arrayB);
+
+       const mergedArray = mergeArraysWithoutDuplicates(uniqueArrayA, uniqueArrayB);
+
+       document.writeln("Array A without duplicates:", uniqueArrayA);
+
+       document.writeln("Array B without duplicates:", uniqueArrayB);
+
+       document.writeln("Merged array without duplicates:", mergedArray);
+
+    </script>
+
+</body>
+
+</html>

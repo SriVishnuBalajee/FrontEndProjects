@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Untitled-1</title>
+    </head>
+    <body>
+        <div id="div" style="color:red"></div>
+    </body>
+        <script>
+            var age=prompt("Enter your age",18);
+            try{
+                if(age >= 18)
+                    alert("You are eligible to vote");
+                
+
+                else if (age >= 60) {  
+                    
+                    divTag.style.color="purple";
+                    throw ("Take Rest");}
+                else 
+                    throw ("Wait until you are 18 years old");
+                
+            }
+             
+             catch(e){
+                     var divTag=document.getElementById("div");
+                     divTag.innerHTML=e;
+                   }
+            
+            // finally{   
+            //     document.writeln("Finally");
+            //     window.open("https://www.google.com");
+            //     }
+            </script>
+
+</html>

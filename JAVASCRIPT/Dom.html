@@ -1,0 +1,37 @@
+<html>	
+    <head>	
+    <title>DOM Example
+    </title>
+    </head>	
+    <body>
+        <p  id="p1">Paragraph1</p>
+        <b  id="b1">Bold text</b>
+        <form  name=”empform”></form>
+        <script>
+            var v=document.createElement("u");
+            v.innerText="UnderLined Text";
+            document.body.appendChild(v);
+            var n=document.createElement("p");
+            document.forms[0].appendChild(n);
+            var textfield=document.createElement("input");
+            textfield.type="text";
+            textfield.name="firstName";
+            textfield.id="p1";
+            textfield.placeholder="First Name";            
+            document.forms[0].appendChild(textfield);
+            var radiofield=document.createElement("input");
+            radiofield.type="radio";
+            radiofield.name="gender";
+            radiofield.value="male";
+            radiofield.id="h1";
+            document.forms[0].appendChild(radiofield);
+            var con=confirm("Enter yes/no");
+              if(con){
+                 var inp1=document.getElementById('b1');
+                  document.body.removeChild(inp1);    }  
+        </script>
+    <input type="text" name="firstName" /><br>
+    <input type="checkbox"  id=”h1” />Music <br>
+    </form>
+</body>
+</html>    
